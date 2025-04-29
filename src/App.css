@@ -1,0 +1,98 @@
+/* Paleta de colores */
+:root {
+  --primary-color: #2563eb; /* Azul principal */
+  --primary-hover: #1b4aaf; /* Azul oscuro para hover */
+  --secondary-color: #497be9; /* Azul claro */
+  --background-color: #f9f9f9; /* Fondo claro */
+  --text-color: #333333; /* Texto principal */
+  --error-color: #e53935; /* Rojo para errores */
+}
+
+/* Fondo general */
+body {
+  background-color: var(--background-color);
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+}
+
+/* Botones */
+button {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+button:hover {
+  background: var(--primary-hover);
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
+
+/* Inputs */
+input,
+textarea {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Tarjetas de productos */
+.product-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Botón de eliminar */
+button.delete-button {
+  background: var(--error-color);
+  /*Rojoparaelbotóndeeliminar*/
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+button.delete-button:hover {
+  background: #b71c1c;
+  -webkit-transform: scale(1.01);
+  -moz-transform: scale(1.01);
+  -ms-transform: scale(1.01);
+  -o-transform: scale(1.01);
+  transform: scale(1.01);
+}
